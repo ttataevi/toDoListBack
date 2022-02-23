@@ -86,11 +86,6 @@ def checking():
     return {"answer": True}
 
 
-@app.route('/space', methods=["POST"])
-def space():
-    currStr = request.json['currStr']
-    isSpace = currStr.isspace() or len(currStr) == 0
-    return {"answer": isSpace}
 
 
 @app.route('/pagination', methods=["POST"])
